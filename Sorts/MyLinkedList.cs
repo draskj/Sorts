@@ -13,6 +13,8 @@ namespace Sorts
             public MyLinkedListNode NextNode { get; set; }
             public MyLinkedListNode PreviousNode { get; set; }
             public T Item { get; set; }
+
+
         }
 
         private MyLinkedListNode Current { get; set; }
