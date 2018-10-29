@@ -29,6 +29,9 @@ namespace Sorts
 
         struct MyStruct
         {
+
+
+
             struct Inside
             {
                 int NumberA { get; set; }
