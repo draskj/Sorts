@@ -9,7 +9,7 @@ namespace Sorts
     /// <summary>
     /// 
     /// </summary>
-    public class ClassA
+    public class ClassA              
     {
         public static int NumberA { get; set; }
         public static int NumberB { get; set; }
