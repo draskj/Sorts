@@ -21,6 +21,10 @@ namespace Sorts
         static void DoSomething2(ClassA input)
         {
             input = new ClassA() { SomeNumber2 = 123 };
+
+
+
+
         }
 
         struct MyStruct
