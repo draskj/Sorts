@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="ClassA.cs" />
     <Compile Include="MyLinkedList.cs" />
+    <Compile Include="NewClassToBeAdded.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
