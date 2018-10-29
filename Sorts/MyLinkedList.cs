@@ -28,6 +28,9 @@ namespace Sorts
                 Current.NextNode = newNode;
                 Current = newNode;
 
+
+
+
             }
             else
             {
