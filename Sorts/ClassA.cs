@@ -17,5 +17,7 @@ namespace Sorts
         public int SomeNumber => NumberA > NumberB ? 1 : 0;
 
         public int SomeNumber2 = NumberA > NumberB ? 1 : 0;
+
+
     }
 }
