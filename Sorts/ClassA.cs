@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Sorts
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class ClassA
     {
         public static int NumberA { get; set; }
