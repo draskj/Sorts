@@ -13,7 +13,7 @@ namespace Sorts
         static string SomeString { get; set; }
         delegate void Printer();
 
-        static void DoSomething(ref int number)
+        static void DoSomething(ref int number)    
         {
             number = 456;
         }
