@@ -15,7 +15,7 @@ namespace Sorts
 
         static void DoSomething(ref int number)    
         {
-            number = 456;
+            number = 456444444;
         }
 
         static void DoSomething2(ClassA input)
