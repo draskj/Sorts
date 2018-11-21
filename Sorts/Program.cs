@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SomeLibrary;
 using System.Threading;
 using System.Linq.Expressions;
 
@@ -50,19 +49,50 @@ namespace Sorts
             return n * Factorial(n - 1);  
         }
 
+        static Task DoSomething()
+        {
+            Task task = new Task(() => {
+
+                Console.WriteLine("Current thread name: " + Thread.CurrentThread.Name);
+                Console.WriteLine("Nothing is done so far!");
+                Thread.Sleep(10000);
+
+            });
+
+            task.Start();
+            return task;
+        }
+
+         static async void GetSomeResult()
+        {
+
+
+            Console.WriteLine("INside async, curent thread " + Thread.CurrentThread.Name);
+
+            await DoSomething();
+
+            Console.WriteLine("Everything is done!");
+        }
+
+        
         static void Main(string[] args)
         {
-            var result = Factorial(3);
-            string[] arr = new string[] { "asas", "xaxsa" };
+
+            Thread.CurrentThread.Name = "MainTHread";
+             GetSomeResult();
+
+            Console.WriteLine("Back in main");
+            //var result = Factorial(3);
+            //string[] arr = new string[] { "asas", "xaxsa" };
              
-            int MyNumber = 123;
+            //int MyNumber = 123;
 
-            ClassA cla = new ClassA() { SomeNumber2 = 111 };
+            //ClassA cla = new ClassA() { SomeNumber2 = 111 };
 
-            DoSomething2(cla);
+            //DoSomething2(cla);
 
-            var cla2 = cla;
-            DoSomething(ref MyNumber);
+            //var cla2 = cla;
+            //DoSomething(ref MyNumber);
 
             //List<Printer> printers = new List<Printer>();
           
